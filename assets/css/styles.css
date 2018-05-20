@@ -122,7 +122,8 @@ section {
     .about_us .about_content span {
       width: 40%; }
       .about_us .about_content span img {
-        width: 100%; }
+        width: 100%;
+        border-radius: 2%; }
     .about_us .about_content .about_description {
       width: 60%; }
       .about_us .about_content .about_description p {
