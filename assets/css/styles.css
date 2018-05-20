@@ -14,6 +14,13 @@ header {
   justify-content: space-between;
   padding: 35px 100px 0;
   font-family: 'Amatic SC', cursive; }
+  header span {
+    width: 180px;
+    margin-left: -95px;
+    margin-top: -30px; }
+    header span img {
+      width: 100%;
+      opacity: 0.7; }
   header nav ul {
     display: flex;
     margin-right: -15px; }
@@ -39,9 +46,19 @@ section {
   font-family: 'Amatic SC', cursive; }
   .welcome-screen h1 {
     font-size: 80px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #336666; }
   .welcome-screen p {
     font-size: 30px; }
+  .welcome-screen .btn {
+    font-size: 26px;
+    border: 1px solid #55aaaa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    outline: none;
+    background: linear-gradient(#99cccc, #55aaaa);
+    text-decoration: none; }
   .welcome-screen .background-image {
     background-image: url(../img/main-baner.jpg);
     position: absolute;
@@ -52,3 +69,73 @@ section {
     background-size: cover;
     background-position: center;
     z-index: -1; }
+
+.news {
+  background: linear-gradient(#99cccc, #55aaaa);
+  text-align: center; }
+  .news .section_introduction {
+    font-size: 32px; }
+    .news .section_introduction p {
+      margin-bottom: 50px;
+      border-bottom: 1px solid #0e9369; }
+  .news .section_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .news .section_content .news_img {
+      width: 40%; }
+    .news .section_content .news_img img {
+      width: 100%;
+      border-radius: 10%; }
+    .news .section_content .news_info {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      padding-left: 100px; }
+      .news .section_content .news_info h2 {
+        margin-bottom: 40px; }
+      .news .section_content .news_info p {
+        font-size: 22px;
+        text-align: inherit;
+        line-height: 1.5; }
+
+.offer {
+  background: linear-gradient(#1864af, #5fabc6);
+  font-size: 32px; }
+  .offer p {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-bottom: 2px solid #255667; }
+  .offer .offer_shortcuts {
+    display: flex;
+    justify-content: space-between;
+    text-align: center; }
+    .offer .offer_shortcuts .shortcut {
+      width: 33%;
+      padding: 0 80px; }
+      .offer .offer_shortcuts .shortcut .description {
+        border: none;
+        font-size: 26px; }
+
+.about_us {
+  background: linear-gradient(#99cccc, #55aaaa);
+  text-align: center; }
+  .about_us .about_title {
+    font-size: 32px; }
+    .about_us .about_title p {
+      margin-bottom: 50px;
+      border-bottom: 1px solid #0e9369; }
+  .about_us .about_content {
+    display: flex; }
+    .about_us .about_content span {
+      width: 40%; }
+      .about_us .about_content span img {
+        width: 100%; }
+    .about_us .about_content .about_description {
+      width: 60%; }
+      .about_us .about_content .about_description p {
+        font-size: 21px;
+        line-height: 1.5;
+        margin-left: 40px;
+        margin-bottom: 15px;
+        text-align: left; }
