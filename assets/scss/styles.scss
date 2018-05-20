@@ -56,7 +56,32 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 100px 80px;
+    
+
+    h3{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    .section_introduction{
+
+        h2{
+            font-size: 40px;
+        }
+
+        p{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-bottom: 80px;
+        }
+
+    }
 
 }
 
@@ -103,19 +128,8 @@ section{
 }
 
 .news{
+
     background: $sectionGreen;
-    text-align: center;
-
-    .section_introduction{
-        font-size: 32px;
-
-       p{
-           margin-bottom: 50px;
-           border-bottom: 1px solid #0e9369;
-       }
-
-    }
-
     .section_content{
         display:flex;
         justify-content: space-between;
@@ -135,9 +149,6 @@ section{
             flex-direction: column;
             padding-left: 100px;
             
-            h2{
-                margin-bottom: 40px;
-            }
             p{
                 font-size: 22px;
                 text-align: inherit;
@@ -150,28 +161,22 @@ section{
 }
 
 .offer{
-
     background: $sectionBlue;
-    font-size: 32px;
 
-    p{
-        margin-top: 20px;
-        margin-bottom: 100px;
-        border-bottom: 2px solid darken(rgb(95, 171, 198),30%);
-    }
     .offer_shortcuts{
         display: flex;
         justify-content: space-between;
-        text-align: center;
+
     
         .shortcut{
             width:33%;
             padding: 0 80px;
+            border: 1px solid black;
 
-            .description{
-                border:none;
-                font-size: 26px;
+            img{
+                padding:15px;
             }
+
         }
     
     }
@@ -180,30 +185,20 @@ section{
 
 .about_us{
     background: $sectionGreen;
-    text-align: center;
 
-    .about_title{
-        font-size: 32px;
-
-        p{
-            margin-bottom: 50px;
-            border-bottom: 1px solid #0e9369;
-        }
-    }
     .about_content{
         display:flex;
         
-
         span{
             width:40%;
 
             img{
                 width:100%;
+                border-radius: 2%;
             }
         }
         .about_description{
             width:60%;
-
 
             p{
                 font-size:21px;

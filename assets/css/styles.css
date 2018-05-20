@@ -36,7 +36,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 100px 80px; }
+  section h3 {
+    font-size: 32px;
+    margin-bottom: 30px; }
+  section p {
+    font-size: 28px; }
+  section .section_introduction h2 {
+    font-size: 40px; }
+  section .section_introduction p {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 80px; }
 
 .welcome-screen {
   position: relative;
@@ -71,13 +83,7 @@ section {
     z-index: -1; }
 
 .news {
-  background: linear-gradient(#99cccc, #55aaaa);
-  text-align: center; }
-  .news .section_introduction {
-    font-size: 32px; }
-    .news .section_introduction p {
-      margin-bottom: 50px;
-      border-bottom: 1px solid #0e9369; }
+  background: linear-gradient(#99cccc, #55aaaa); }
   .news .section_content {
     display: flex;
     justify-content: space-between;
@@ -92,45 +98,32 @@ section {
       display: flex;
       flex-direction: column;
       padding-left: 100px; }
-      .news .section_content .news_info h2 {
-        margin-bottom: 40px; }
       .news .section_content .news_info p {
         font-size: 22px;
         text-align: inherit;
         line-height: 1.5; }
 
 .offer {
-  background: linear-gradient(#1864af, #5fabc6);
-  font-size: 32px; }
-  .offer p {
-    margin-top: 20px;
-    margin-bottom: 100px;
-    border-bottom: 2px solid #255667; }
+  background: linear-gradient(#1864af, #5fabc6); }
   .offer .offer_shortcuts {
     display: flex;
-    justify-content: space-between;
-    text-align: center; }
+    justify-content: space-between; }
     .offer .offer_shortcuts .shortcut {
       width: 33%;
-      padding: 0 80px; }
-      .offer .offer_shortcuts .shortcut .description {
-        border: none;
-        font-size: 26px; }
+      padding: 0 80px;
+      border: 1px solid black; }
+      .offer .offer_shortcuts .shortcut img {
+        padding: 15px; }
 
 .about_us {
-  background: linear-gradient(#99cccc, #55aaaa);
-  text-align: center; }
-  .about_us .about_title {
-    font-size: 32px; }
-    .about_us .about_title p {
-      margin-bottom: 50px;
-      border-bottom: 1px solid #0e9369; }
+  background: linear-gradient(#99cccc, #55aaaa); }
   .about_us .about_content {
     display: flex; }
     .about_us .about_content span {
       width: 40%; }
       .about_us .about_content span img {
-        width: 100%; }
+        width: 100%;
+        border-radius: 2%; }
     .about_us .about_content .about_description {
       width: 60%; }
       .about_us .about_content .about_description p {
