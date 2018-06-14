@@ -31,6 +31,7 @@ body{
 }
 
 header{
+    z-index: 2;
     margin-right: 50px;
     position: fixed;
     width: 100%;
@@ -183,6 +184,51 @@ section{
 .news{
 
     background: $sectionGreen;
+    position: relative;
+
+    .arrowLeft{
+        background: none;
+        border:none;
+        position: absolute;
+        border-top: 4px solid red;
+        border-left: 4px solid red;
+        transform: rotate(-45deg);
+        width: 50px;
+        height: 50px;
+        left: 20px;
+        top: 50%;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    .arrowRight{
+        background: none;
+        border:none;
+        position: absolute;
+        border-top: 4px solid ;
+        border-right: 4px solid ;
+        border-color: red;
+        transform: rotate(45deg);
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        top: 50%;
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    .disabledBtn{
+
+        border-color: gray;
+        
+        &:hover{
+            cursor: not-allowed;
+        }
+        
+    }
 
     .section_content{
         display:flex;
