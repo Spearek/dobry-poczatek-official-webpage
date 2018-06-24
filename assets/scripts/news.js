@@ -9,8 +9,8 @@ const thirdParagraph = document.querySelector('.thirdParagraph');
 const newsImage = document.querySelector('.imageRef');
 
 let newsArr;
-
 let activePage = 1;
+let currentNews = activePage - 1;
 
 window.onload = function(){
 
@@ -21,16 +21,14 @@ window.onload = function(){
             const content = JSON.parse(XHR.responseText);
            newsArr = content.news;
 
-            newsTitle.textContent=newsArr[0].title;
-            firstParagraph.textContent=newsArr[0].p1;
-            secondParagraph.textContent=newsArr[0].p2;
-            thirdParagraph.textContent=newsArr[0].p3;
-            newsImage.setAttribute("src",newsArr[0].imageSrc);  
-            
-           
+           newsChanging(currentNews);
+          /*  newsTitle.textContent=newsArr[currentNews].title;
+            firstParagraph.textContent=newsArr[currentNews].p1;
+            secondParagraph.textContent=newsArr[currentNews].p2;
+            thirdParagraph.textContent=newsArr[currentNews].p3;
+            newsImage.setAttribute("src",newsArr[currentNews].imageSrc);  */
             arrowLeft.disabled = true;
             arrowLeft.classList.add('disabledBtn');
-           console.log(activePage);
         }
 
 
@@ -46,7 +44,11 @@ window.onload = function(){
 
 
 arrowLeft.addEventListener("click",function(){
+
     activePage -- ;
+    currentNews -- ;
+    newsChanging(currentNews);
+
     arrowRight.disabled = false;
     arrowRight.classList.remove('disabledBtn');
 
@@ -60,10 +62,15 @@ arrowLeft.addEventListener("click",function(){
     }
     
     console.log("ActivePage wynosi: " + activePage);
+    console.log("Currrent News wynosi: " + currentNews);
 });
 
 arrowRight.addEventListener("click",function(){
     activePage ++ ;
+    currentNews ++;
+
+    newsChanging(currentNews);
+
     arrowLeft.disabled = false;
     arrowLeft.classList.remove('disabledBtn');
 
@@ -77,6 +84,16 @@ arrowRight.addEventListener("click",function(){
     }
     
     console.log("ActivePage wynosi: " + activePage);
+    console.log("Currrent News wynosi: " + currentNews);
 });
+
+
+newsChanging = function(num){ 
+    newsTitle.textContent=newsArr[num].title;
+    firstParagraph.textContent=newsArr[num].p1;
+    secondParagraph.textContent=newsArr[num].p2;
+    thirdParagraph.textContent=newsArr[num].p3;
+    newsImage.setAttribute("src",newsArr[num].imageSrc);
+}
 
 

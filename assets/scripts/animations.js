@@ -5,7 +5,7 @@
     const logo = document.querySelector('.page_logo');
 
     function fixNav(){
-       // console.log(topOfNav, window.scrollY);
+      //  console.log(topOfNav, window.scrollY);
 
         if(window.scrollY >= 500){
             header.classList.add('fixedNav');
