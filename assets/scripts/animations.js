@@ -94,12 +94,21 @@ function colorNav(){
 
   for(i=0;i<=5;i++){
     // zrobić wyjątek dla 5 sekcji żeby gasiła się tylko powyżej
-    if (window.scrollY >=heightSummary[i] && window.scrollY < heightSummary[i+1]){
+
+
+
+   if (window.scrollY >=heightSummary[i] && window.scrollY < heightSummary[i+1]){
       links[i].classList.add('orangered');
     }
+
     else {
       links[i].classList.remove('orangered');
     }
+    if (window.scrollY >= heightSummary[5]){
+      links[5].classList.add('orangered');
+    }
+    else {links[5].classList.remove('orangered');}
+
   }
   /*console.log(window.scrollY);
   if (window.scrollY >= heightSummary[0] && window.scrollY < heightSummary[1] ){
