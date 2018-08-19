@@ -19,6 +19,7 @@ btns.forEach(function(btn,btnIndex){
             offerIndex === btnIndex ? offer.classList.remove('offer_content_hidden') : offer.classList.add('offer_content_hidden');
 
         });
-
+            resizeHeightsSummarizing();
             });
+            
                  });

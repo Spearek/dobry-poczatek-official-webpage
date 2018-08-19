@@ -22,11 +22,6 @@ window.onload = function(){
            newsArr = content.news;
 
            newsChanging(currentNews);
-          /*  newsTitle.textContent=newsArr[currentNews].title;
-            firstParagraph.textContent=newsArr[currentNews].p1;
-            secondParagraph.textContent=newsArr[currentNews].p2;
-            thirdParagraph.textContent=newsArr[currentNews].p3;
-            newsImage.setAttribute("src",newsArr[currentNews].imageSrc);  */
             arrowLeft.disabled = true;
             arrowLeft.classList.add('disabledBtn');
         }
@@ -48,6 +43,7 @@ arrowLeft.addEventListener("click",function(){
     activePage -- ;
     currentNews -- ;
     newsChanging(currentNews);
+    resizeHeightsSummarizing();
 
     arrowRight.disabled = false;
     arrowRight.classList.remove('disabledBtn');
@@ -70,6 +66,7 @@ arrowRight.addEventListener("click",function(){
     currentNews ++;
 
     newsChanging(currentNews);
+    resizeHeightsSummarizing();
 
     arrowLeft.disabled = false;
     arrowLeft.classList.remove('disabledBtn');
