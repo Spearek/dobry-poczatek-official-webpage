@@ -94,6 +94,8 @@ newsChanging = function(num){
     secondParagraph.textContent=newsArr[num].p2;
     thirdParagraph.textContent=newsArr[num].p3;
     newsImage.setAttribute("src",newsArr[num].imageSrc);
+    newsImage.setAttribute("alt",newsArr[num].alternative);
+    newsImage.setAttribute("title",newsArr[num].title);
 }
 
 

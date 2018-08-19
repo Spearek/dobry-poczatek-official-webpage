@@ -25,6 +25,14 @@
                  $('#link4').click(function(){ $.scrollTo($('.offer_details'), 600); });
                  $('#link5').click(function(){ $.scrollTo($('.team'), 600); });
                  $('#link6').click(function(){ $.scrollTo($('.contact'), 600); });
+                 $('#link7').click(function(){ $.scrollTo($('.news'), 600); });
+                 $('#foot_link1').click(function(){ $.scrollTo($('.news'), 600); });
+                 $('#foot_link2').click(function(){ $.scrollTo($('.offer'), 600); });
+                 $('#foot_link3').click(function(){ $.scrollTo($('.about_us'), 600); });
+                 $('#foot_link4').click(function(){ $.scrollTo($('.offer_details'), 600); });
+                 $('#foot_link5').click(function(){ $.scrollTo($('.team'), 600); });
+                 $('#foot_link6').click(function(){ $.scrollTo($('.contact'), 600); });
+                
             }	);
     
         
@@ -37,7 +45,7 @@
 
     <header>
      
-        <span></span>
+        <span title="logo fundacji dobry początek"></span>
         <nav>
             <ul>
                 <li><a id="link1" href="#" class='links'>Aktualności</a></li>
@@ -55,12 +63,12 @@
         <div class="background-image"></div>
         <h1>Fundacja Dobry Początek</h1>
         <p>Przygotujemy Cię na godny i piękny poród</p>
-        <a href="#" class="btn">Dowiedz się więcej!</a>
+        <a href="#" class="btn" id="link7">Dowiedz się więcej!</a>
 
     </section>
 
     <main>
-        <section class="news">
+        <section class="news" id="newsies">
             <button class="arrowLeft" ></button>
             <button class="arrowRight"></button>
 
@@ -71,7 +79,7 @@
 
             <div class="section_content">
 
-            <div class="news_img"><img class="imageRef" src="./assets/img/walentynkowo.jpg"/></div>
+            <div class="news_img"><img class="imageRef" src="./assets/img/walentynkowo.jpg" alt="Mężczyzna nasłuchuje brzucha ciężarnej kobiety" title="Walentynkowy Kurs Szkoły rodzenia"/></div>
 
                     <div class="news_info">
                         <h3 class="newsTitle">Walentynkowy Kurs Szkoły rodzenia</h3>
@@ -92,17 +100,17 @@
             <div class="offer_shortcuts">
 
                 <div class="shortcut">
-                    <span><img src="./assets/icons/png/004-people-8.png"</span>
+                    <span><img src="./assets/icons/png/004-people-8.png"alt="położna z noworodkiem" title="Szkoła rodzenia"></span>
                     <h3>Szkoła rodzenia</h3>
                     <p class="description">Program obejmuje 6 tygodniowy kurs, na którym dowiesz się wszystkiego z zakresu ciąży, porodu i macieżyństwa. </p>
                 </div>
                 <div class="shortcut">
-                        <span><img src="./assets/icons/png//002-milk.png"</span>
+                        <span><img src="./assets/icons/png//002-milk.png"alt="butelka z mlekiem" title="porady laktacyjne"></span>
                         <h3>Porady Laktacyjne</h3>
                         <p class="description">Jeśli chcecie dobrze rozpocząć Waszą laktacyjną przygodę, napotkaliście problem na Waszej mlecznej drodze, potrzebujesz wsparcia...</p>
                 </div>
                 <div class="shortcut">
-                        <span><img src="./assets/icons/png/012-people.png"</span>
+                        <span><img src="./assets/icons/png/012-people.png" alt="położna, noworodek i lekarz" title="warsztaty szkoły rodzenia"></span>
                         <h3>Warsztaty</h3>
                         <p>Zapraszamy do śledzenia aktualności, gdzie cyklicznie przedstawiamy propozycje warsztatowe.</p>
                 </div>
@@ -119,7 +127,7 @@
             </div>
 
             <div class="about_content">
-                <span><img src="./assets/img/About_US.jpeg"></span>
+                <span><img src="./assets/img/About_US.jpeg" alt="Aleksandra Knihinicka i Agata Gawlik" title="fundacja dobry początek"></span>
                 <div class="about_description">
                     <p>Położna jest towarzyszką kobiety. Zdobyta wiedza i umiejętności dają nam kompetencje, do obejmowania opieką kobiet na każdym etapie ich życia. Otrzymałyśmy zawodowe przyzwolenie na bycie blisko kobiety, jej rodziny i nowego życia. To wielki zaszczyt i jeszcze większa odpowiedzialność.</p>
                     <p>Nasza praca daje dużo możliwości udzielania wsparcia, jednak często pojawiają się ograniczenia czasowe, organizacyjne, czy też związane ze standardami obowiązującymi w środowisku szpitalnym. Postanowiłyśmy wykorzystać ogrom możliwości, które daje nam wykonywanie tego zawodu. Dlatego też pragniemy wyjść z naszym położnictwem krok dalej. Fundacja Dobry Początek jest inicjatywą, która powstała w odpowiedzi na potrzeby napotykanych przez nas kobiet oraz naszą zawodową potrzebę bycia bliżej tych, których otaczamy opieką i wsparciem.</p>
@@ -238,7 +246,7 @@
                 <div class="teammate">
 
                     <div class="teammate_introduction">
-                        <img src="assets/img/ola_team.jpg"/>
+                        <img src="assets/img/ola_team.jpg" alt="położna Aleksandra Knihinicka" title="Prezes Fundacji"/>
                         <h5>Aleksandra Knihinicka - Prezes Fundacji</h5>
                     </div>
                     <div class="teammate_story">
@@ -254,7 +262,7 @@
                         <p>Obecnie pracuje w Uniwersyteckim Szpitalu Klinicznym im. Jana Mikulicza - Radeckiego we Wrocławiu. Na codzień zajmuję się świeżo upieczonymi mamami oraz ich dziećmi, a także sprawuję opiekę nad ciężarnymi w oddziale patologii ciąży.</p>
                     </div>
                     <div class="teammate_introduction">
-                        <img src="assets/img/agata_team.jpg"/>
+                        <img src="assets/img/agata_team.jpg" alt="położna Agata Gawlik" title="Wiceprezes Fundacji"/>
                         <h5>Agata Gawlik - Wiceprezes Fundacji</h5>
                     </div>
                 </div>
@@ -271,11 +279,12 @@
             <div class="contact_content">
                 <div class="contact_map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2522.345683781784!2d17.067143216173125!3d50.787701879523404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fd49428f7e675%3A0xc02e699f4749b7ac!2sFundacja+Dobry+Pocz%C4%85tek!5e0!3m2!1spl!2spl!4v1527017809303" width="600px" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                 <div class=contact_details>
+                    
                     <p>Fundacja Dobry Początek</p>
                     <p>Brzegowa 17B</p>
                     <p>Strzelin 57-100</p>
-                    <p>519 364 958</p>
-                    <p>fundacjadobrypoczatek@gmail.com</p>
+                    <p><a href="tel:+48519364958">519 364 958</a></p>
+                    <p><a href="mailto:fundacjadobrypoczatek@gmail.com">fundacjadobrypoczatek@gmail.com</a></p>
                     <p>NIP: 9141566412</p>
                     <p>REGON: 366255802</p>
                     <p>nr. konta: 23 1750 0012 0000 0000 3599 0666</p>
@@ -290,27 +299,27 @@
         <div class="footer_info_unit">
             <p class="footTitle">Powróć do: </p>
             <ul>
-                <li><a href="#">Aktualności</a></li>
-                <li><a href="#">Oferta</a></li>
-                <li><a href="#">O nas</a></li>
-                <li><a href="#">Szczegóły oferty</a></li>
-                <li><a href="#">Nasz Zespół</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a id="foot_link1" class="sidenav">Aktualności</a></li>
+                <li><a id="foot_link2" class="sidenav">Oferta</a></li>
+                <li><a id="foot_link3" class="sidenav">O nas</a></li>
+                <li><a id="foot_link4" class="sidenav">Szczegóły oferty</a></li>
+                <li><a id="foot_link5" class="sidenav">Nasz Zespół</a></li>
+                <li><a id="foot_link6" class="sidenav">Kontakt</a></li>
             </ul>
         </div>
         <div class="footer_info_unit">
             <p class="footTitle">Dodatkowe materiały:</p>
             <ul>
-                <li><a href="#">Statut Fundacji</a></li>
-                <li><a href="#">Standard opieki okołoporodowej</a></li>
-                <li><a href="#">Artykuł o naszej fundacji</a></li>
+                <li><a href="./Statut-Fundacji-Dobry-Początek.pdf" target="_">Statut Fundacji</a></li>
+                <li><a href="http://prawo.sejm.gov.pl/isap.nsf/download.xsp/WDU20120001100/O/D20121100.pdf" target="_">Standard opieki okołoporodowej</a></li>
+                <li><a href="./Artykul-nowiny-strzelinskie.pdf" target="_">Artykuł o naszej fundacji</a></li>
             </ul>
         </div>
         <div class="footer_info_unit">
                 <p class="footTitle  footTitle_contact ">Kontakt:</p>
                 <p>Fundacja dobry początek</p>
                 <p>Brzegowa 17B Strzelin</p>
-                <p><a href=tel:+48700880240>tel. 0 700 880 240</a></p>
+                <p><a href=tel:+48519364958>tel. 519 364 958</a></p>
                 <p><a href="mailto:fundacjadobrypoczatek@gmail.com">fundacjadobrypoczatek@gmail.com</a></p>
     
         </div>
@@ -318,7 +327,7 @@
         <div class="footer_info_unit footer_fb">
         <div class="fb-page" data-href="https://www.facebook.com/fundacjadobrypoczatek/" data-tabs="likes" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/fundacjadobrypoczatek/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fundacjadobrypoczatek/">Fundacja Dobry Początek</a></blockquote></div>
         </div>
-        <div class="footer_logo"></div>
+        <div class="footer_logo" title="logo fundacji dobry początek"></div>
     </div>
 
     <div class="footer_credits">

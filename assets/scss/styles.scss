@@ -29,6 +29,7 @@ body{
     font-family: $mainFont;
 
 
+
 }
 
 
@@ -90,25 +91,19 @@ header{
                 text-decoration: none;
                 color: black;
                 font-size: 30px;
-                //color: white;
+                
 
 
                 
             }
         }
     }
-    @include mediaQ(1170px){
-        nav ul li>a{
-            font-size: 24px;
-        }
-        
-     }
      @include mediaQ(1080px){
         nav ul li>a{
-            font-size: 20px;
+            font-size: 26px;
         }
      }
-    @include mediaQ(795px) {
+    @include mediaQ(900px) {
         padding-left: 0;
         padding-right: 0;
         justify-content: center;
@@ -116,21 +111,11 @@ header{
           display: none;
         }
     }
-    @include mediaQ(520px){
-
-     nav ul{
-        margin-right:0;
-     }
-
-    nav ul li{
-          margin: 0 9px;
-          display:flex;
-         align-items: center;
-         a{
-              font-size: 16px;
-          }
-        }
-    }
+    @include mediaQ(660px){
+    nav{
+        display:none;
+    } 
+}
 
 }
 
@@ -198,7 +183,23 @@ header{
         }
     }
     @include mediaQ(786px){
+    
         padding-left:20px;
+    nav{
+        display: block;
+    }
+    nav ul{
+        margin-right:0;
+    }
+    nav ul li{
+        
+        margin: 0 9px;
+        display:flex;
+       align-items: center;
+       a{
+            font-size: 16px;
+        }
+      }
         span{
             display: none;
         }
@@ -260,7 +261,7 @@ section{
     text-align: center;
     min-height: 100vh;
     font-family: 'Amatic SC', cursive;
-    z-index: -1;
+    z-index: 1;
 
     h1{
         font-size: 80px;
@@ -271,6 +272,7 @@ section{
         font-size: 30px;
     }
     .btn{
+        transition: transform 0.4s ease-in;
         font-size:26px;
         border: 1px solid darken($bcgGreen,20%);
         border-radius: 10px;
@@ -279,7 +281,15 @@ section{
         outline: none;
         background: $sectionGreen;
         text-decoration: none;
-     
+        &:hover{
+            background:#487eb0;
+            transform:translate(3px,3px);
+            transform:scale(1.2);
+            cursor: pointer;
+            color: white;
+            font-weight: 300;
+            border-color: #487eb0;
+        }
 
     }
 
@@ -295,9 +305,7 @@ section{
         z-index: -1;
 
     }
-  /*  @include mediaQ(1170px){
 
-    } */
 }
 
 .news{
@@ -563,14 +571,13 @@ section{
         display: flex;
         flex-direction: column;
         width: 100%;
-       // transition: all 3s ease-in;
+       
         
     }
 
     .btnContainer{
         display: flex;
         justify-content: space-around;
-      //  transition: all 5s ease-in;
 
         .offerBtn{
         font-size:22px;
@@ -850,6 +857,9 @@ section{
         display:flex;
         justify-content: space-evenly;
         align-items: center;
+        .contact_details p>a{
+            color: black;
+        }
 
 
         @include mediaQ(1200px){
@@ -886,7 +896,6 @@ section{
 footer {
     display: flex;
     flex-direction: column;
-    //height: 400px;
     background-color: #336E7B;
     justify-content: space-around;
     padding-top:20px;
@@ -895,6 +904,13 @@ footer {
     .footer_info{
         display:flex;
         justify-content: space-around;
+
+        .footer_info_unit ul li>a {
+            cursor: pointer;
+            &:hover{
+                color: #fbc531;
+            }
+        }
         li,p{
             color: white;
             font-size: 18px;
@@ -911,6 +927,10 @@ footer {
             color: white;
             font-size:16px;
             text-decoration: none;
+            &:hover{
+                color: #fbc531;
+            }
+
             
         }
         .footer_logo{
