@@ -9,6 +9,11 @@ var concat = require('gulp-concat');
 var imagemin = require ('gulp-imagemin');
 var changed = require ('gulp-changed');
 var uglify = require('gulp-uglify-es').default;
+var babel = require('gulp-babel');
+var del = require('del');
+var sequence = require('run-sequence');
+
+
 
 gulp.task('reload', function(){
 	browserSync.reload();
@@ -44,6 +49,22 @@ gulp.task('sass', function(){
 });
 
 
+
+
+/* Do builda */
+
+gulp.task('clean', function(){
+	return del(['dist']);
+});
+
+gulp.task('es6',function(){
+	return gulp.src('./assets/scripts/*.js')
+	.pipe(babel({
+		presets: ['es2015']
+	}))
+	.pipe(gulp.dest('./dist/js/compiled js'));
+});
+
 gulp.task('css', function(){
 	return gulp.src('./assets/css/*.css') 
 	.pipe(concat('concatStyle.css')) 
@@ -51,17 +72,8 @@ gulp.task('css', function(){
 	.pipe(gulp.dest('./dist/css')); 
 });
 
-
-/*gulp.task('js', function(){
-	return gulp.src('./assets/scripts/*.js') // jak w tym od CSSa, usuniemy znaki białe
-	// tu robimy analogicznie jak w css z tym kontaktenowaniem
-	.pipe(concat('concatScripts.js')) 
-	.pipe(uglify())
-	.pipe(gulp.dest('./dist/js')); 
-});*/
-
 gulp.task("uglify", function () {
-	return gulp.src('./assets/scripts/*.js')
+	return gulp.src('./dist/js/compiled js/*.js')
 	.pipe(concat('concatScripts.js')) 
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
@@ -76,4 +88,9 @@ gulp.task('img',function(){
 });
 
 
+
+
 gulp.task('default', ['serve']);
+gulp.task('build',function(){
+	sequence('clean','es6',['css','uglify','img']);
+});

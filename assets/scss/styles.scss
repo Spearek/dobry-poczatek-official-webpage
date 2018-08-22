@@ -306,6 +306,12 @@ section{
 
     }
 
+    @include mediaQ(500px){
+        h1,p,a{
+            transform:translateY(-60px);
+        }
+    }
+
 }
 
 .news{
