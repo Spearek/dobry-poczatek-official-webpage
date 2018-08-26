@@ -1,5 +1,5 @@
-let offers = document.querySelectorAll(".offer_dynamic_content");
-let btns = document.querySelectorAll(".offerBtn");
+const offers = document.querySelectorAll(".offer_dynamic_content");
+const btns = document.querySelectorAll(".offerBtn");
 
 
 btns.forEach(function(btn,btnIndex){

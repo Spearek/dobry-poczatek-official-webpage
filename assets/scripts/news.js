@@ -56,9 +56,7 @@ arrowLeft.addEventListener("click",function(){
         arrowLeft.disabled = false;
         arrowLeft.classList.remove('disabledBtn');
     }
-    
-    console.log("ActivePage wynosi: " + activePage);
-    console.log("Currrent News wynosi: " + currentNews);
+
 });
 
 arrowRight.addEventListener("click",function(){
@@ -79,13 +77,11 @@ arrowRight.addEventListener("click",function(){
         arrowRight.disabled = false;
         arrowRight.classList.remove('disabledBtn');
     }
-    
-    console.log("ActivePage wynosi: " + activePage);
-    console.log("Currrent News wynosi: " + currentNews);
+
 });
 
 
-newsChanging = function(num){ 
+const newsChanging = num =>{ 
     newsTitle.textContent=newsArr[num].title;
     firstParagraph.textContent=newsArr[num].p1;
     secondParagraph.textContent=newsArr[num].p2;

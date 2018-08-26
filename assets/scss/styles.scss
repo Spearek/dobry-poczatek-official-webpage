@@ -996,6 +996,9 @@ footer {
         text-align:center;
          margin:0 auto;
          font-size: 14px;
+         a{
+             color: white;
+         }
          @include mediaQ(412px){
             font-size:11px;
          }

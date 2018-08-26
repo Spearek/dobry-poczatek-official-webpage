@@ -1,0 +1,50 @@
+{
+	"news": [
+		{
+			"title": "Wakacyjny kurs szkoły rodzenia",
+			"p1": "Wakacyjny odpoczynek trwa, piękna pogoda sprzyja dobrej zabawie i relaksowi. ",
+			"p2": "Dzieci jednak nie poczekają, a od bycia rodzicem nie można zrobić sobie wakacji, dlatego nasza Szkoła Rodzenia pracuje w najlepsze. Już w tym tygodniu rusza kolejny cykl zajęć dla przyszłych Rodziców. Wszystkie miejsca są już zajęte (co bardzo nas cieszy), ale już teraz serdecznie zapraszamy do zapisów na kolejny cykl spotkań, którego rozpoczęcie planujemy na koniec lata. ",
+			"p3": "Cieszmy się tym słonecznym czasem, jeśli macie do nas jakieś pytania zachęcamy do kontaktu! 😘 ⛱️ 🍦 ",
+			"imageSrc": "/assets/img/kurs_wakacyjny_18.jpg",
+			"alternative": "Stópki małego dziecka"
+		},
+
+		{
+			"title": "Walentynkowy Kurs Szkoły rodzenia",
+			"p1": "Zapraszamy wszystkich zakochanych i oczekujących na swój mały cud rodziców, na nowy cykl Szkoły Rodzenia!",
+			"p2": "Spotykamy się przez 6 tygodni w kameralnych grupach, miła atmosfera i dawka sporej wiedzy.",
+			"p3": "Pierwsze zajęcia odbędą się już 15 lutego o godz. 17.00 w Strzelińskim Centrum Medycznym. Do zobaczenia!",
+			"imageSrc": "/assets/img/walentynkowo.jpg",
+			"alternative": "Mężczyzna nasłuchuje brzucha ciężarnej kobiety"
+		},
+
+		{
+			"title": "Wesołych Świąt!",
+			"p1": "Z okazji nadchodzących Świat Bożego Narodzenia życzymy Wam:",
+			"p2": "zdrowia - przyda się w każdym okresie życia, spokoju - ważnego w ciąży, jak i po porodzie, cierpliwości - szczególnie cenna po narodzinach dziecka, dużo wzajemnego zrozumienia, aby lepiej odnaleźć się w nowych rolach, radości - to już z pewnością macie oraz niekończącej się miłości!",
+			"p3": "Zespół Fundacji Dobry Początek, Agata i Ola",
+			"imageSrc": "/assets/img/snowman.jpeg",
+			"alternative": "Świąteczna bombka z wizerunkiem bałwana"
+		},
+
+		{
+			"title": "Zimowy kurs Szkoły rodzenia!",
+			"p1": "Zima zbliża się wielkimi krokami! Tak jak wielkimi krokami zbliża się najważniejszy okres w Waszym życiu, zostaniecie rodzicami. Chcemy Wam pomóc przygotować się do tak ważnej roli, a więc zapraszamy na zimową edycję Szkoły Rodzenia!",
+			"p2": "Planowany czas rozpoczęcia: początek grudnia, szczegóły już wkrótce.",
+			"p3": "Zostały już tylko 2 miejsca!",
+			"imageSrc": "/assets/img/winter_childbirth.jpg",
+			"alternative": "Ciężarna kobieta trzymająca dłonie w kształcie serca na brzuchu"
+		},
+
+		{
+			"title": "Poród",
+			"p1": "Sformułowań jest wiele, poczynając od tych najbardziej medycznych, kończąc na filozoficznych tezach. Dla mnie, jako dla położnej, poród jest kwintesencją kobiecości. Mądrością natury i pięknem kobiecego ciała, ogromną siłą, jaka drzemie w nas, kobietach. Podczas porodu każda rodząca odczuwa ból, ten ból jest jedynym fizjologicznym bólem, który ma jeden cel, tym jest celem wasze dziecko. Natomiast poród nigdy nie kojarzył mi się z cierpieniem…",
+			"p2": "To jak będzie wyglądał wasz poród, w ogromnej większości zależy od was, czy zapamiętacie to wydarzenie, jako traumatyczny czas tylko i wyłącznie bólu, czy najpiękniejszy dzień witania nowego członka rodziny. Przygotowania do tego ważnego wydarzenia dobrze rozpocząć w ciąży. Przeczytajcie standard opieki okołoporodowej, prawa pacjenta, stwórzcie plan porodu, wybierzcie miejsce narodzin waszego dziecka. Zapoznajcie się z metodami, które mogą okazać się bardzo pomocne w przejściu tej trudnej, bolesnej drogi, na końcu której czeka najlepszy prezent. Łagodzenie bólu porodowego nie oznacza walki z nim, polega raczej na zrozumieniu jego fizjologii i współpracowaniu z naturą.",
+			"p3": "Warto do porodu podejść ze świadomością ciała i sygnałów z niego płynących, umożliwi to kontakt z samą sobą, stworzy poczucie bezpieczeństwa. W porodzie potrzebna będzie także pewna dawka pokory i przyzwolenia, że może być inaczej niż założyłyśmy. Zaufajcie sobie, polubcie swoje ciało, które jest doskonałe, w końcu nosi w sobie nowe życie i jestem pewna – da radę to nowe życie wydać na świat.. Położna Ola",
+			"imageSrc": "/assets/img/little_feets.jpeg",
+			"alternative": "Stopy noworodka w dłonach matki"
+		}
+
+
+    ]
+}
